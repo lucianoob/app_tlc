@@ -16,7 +16,7 @@ class CreatePaymentsTable extends Migration
         if (!Schema::hasTable('payments')) {
             Schema::create('payments', function (Blueprint $table) {
                 $table->increments('id');
-                $table->integer('supplier_id')->unsigned();
+                $table->integer('supplier_id')->nullable()->unsigned();
                 $table->foreign('supplier_id')->
                     references('id')->
                     on('suppliers')->

@@ -68,5 +68,24 @@ class PaymentsTableSeeder extends Seeder
                 'supplier_id' => 3,
             ]);
         }
+        $test = DB::table('payments')->where('supplier_id', 4)->exists();
+        if(!$test)
+        {
+            DB::table('payments')->insert([
+                'description' => str_random(10),
+                'payment' => rand(0, 99999) / 100,
+                'supplier_id' => 4,
+            ]);
+            DB::table('payments')->insert([
+                'description' => str_random(10),
+                'payment' => rand(0, 99999) / 100,
+                'supplier_id' => 4,
+            ]);
+            DB::table('payments')->insert([
+                'description' => str_random(10),
+                'payment' => rand(0, 99999) / 100,
+                'supplier_id' => 4,
+            ]);
+        }
     }
 }

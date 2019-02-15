@@ -1,6 +1,6 @@
 <?php
 
-namespace TLC;
+namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -32,6 +32,6 @@ class User extends Authenticatable
 
     public function company()
     {
-       return $this->hasOne('TLC\Company');
+       return $this->hasOne('App\Company');
     }
 }

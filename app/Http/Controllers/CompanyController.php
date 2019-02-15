@@ -1,11 +1,11 @@
 <?php
 
-namespace TLC\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use TLC\User;
-use TLC\Company;
+use App\User;
+use App\Company;
 
 class CompanyController extends Controller
 {

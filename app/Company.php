@@ -1,6 +1,6 @@
 <?php
 
-namespace TLC;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -15,8 +15,8 @@ class Company extends Model
         'user_id', 'name', 'cnpj', 'email', 'phone', 'cep', 'address',
     ];
 
-    public function supplier()
+    public function suppliers()
     {
-        return $this->hasMany('TLC\Supplier');
+        return $this->hasMany('App\Supplier');
     }
 }

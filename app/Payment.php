@@ -1,6 +1,6 @@
 <?php
 
-namespace TLC;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 

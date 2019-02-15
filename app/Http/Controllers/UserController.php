@@ -1,9 +1,9 @@
 <?php
 
-namespace TLC\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
-use TLC\User;
+use App\User;
 
 class UserController extends Controller
 {

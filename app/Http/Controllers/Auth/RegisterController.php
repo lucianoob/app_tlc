@@ -1,14 +1,14 @@
 <?php
 
-namespace TLC\Http\Controllers\Auth;
+namespace App\Http\Controllers\Auth;
 
-use TLC\User;
-use TLC\Company;
-use TLC\Http\Controllers\Controller;
+use App\User;
+use App\Company;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use TLC\Notifications\UserActivate;
+use App\Notifications\UserActivate;
 use Illuminate\Http\Request;
 use Illuminate\Auth\Events\Registered;
 

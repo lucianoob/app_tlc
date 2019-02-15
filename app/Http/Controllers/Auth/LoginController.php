@@ -1,9 +1,9 @@
 <?php
 
-namespace TLC\Http\Controllers\Auth;
+namespace App\Http\Controllers\Auth;
 
-use TLC\Http\Controllers\Controller;
-use TLC\User;
+use App\Http\Controllers\Controller;
+use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 

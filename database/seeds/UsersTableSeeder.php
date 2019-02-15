@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
-use TLC\User;
+use App\User;
 
 class UsersTableSeeder extends Seeder
 {
@@ -13,29 +13,29 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        $master = DB::table('users')->where('username', 'master')->exists();
-        if(!$master)
+        $user1 = DB::table('users')->where('username', 'user1')->exists();
+        if(!$user1)
         {
             User::create([
                 'id'    => 1,
-                'name'    => 'Master',
-                'username'    => 'master',
-                'email'    => 'master@test.com',
-                'password'   =>  Hash::make('M@st3r#2019'),
+                'name'    => 'User1',
+                'username'    => 'user1',
+                'email'    => 'user1@test.com',
+                'password'   =>  Hash::make('User1#2019'),
                 'remember_token' =>  str_random(10),
                 'token' =>  null,
                 'active' =>  1,
             ]);
         }
-        $test = DB::table('users')->where('username', 'test')->exists();
-        if(!$test)
+        $user2 = DB::table('users')->where('username', 'user2')->exists();
+        if(!$user2)
         {
             User::create([
                 'id'    => 2,
-                'name'    => 'User Test',
-                'username'    => 'test',
-                'email'    => 'user@test.com',
-                'password'   =>  Hash::make('Us3r#2019'),
+                'name'    => 'User2',
+                'username'    => 'user2',
+                'email'    => 'user2@test.com',
+                'password'   =>  Hash::make('User2#2019'),
                 'remember_token' =>  str_random(10),
                 'token' =>  null,
                 'active' =>  1,

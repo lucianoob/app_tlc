@@ -33,7 +33,7 @@
     },
     "autoload": {
         "psr-4": {
-            "TLC\\": "app/"
+            "App\\": "app/"
         },
         "classmap": [
             "database/seeds",

@@ -1,11 +1,11 @@
 <?php
 
-namespace TLC\Http\Controllers;
+namespace App\Http\Controllers;
 
-use TLC\User;
-use TLC\Company;
-use TLC\Supplier;
-use TLC\Payment;
+use App\User;
+use App\Company;
+use App\Supplier;
+use App\Payment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
